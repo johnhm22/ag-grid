@@ -36,7 +36,6 @@ export const getMovies = async (skip: number, limit: number) => {
     const result = await movies.find().limit(limit).skip(skip);
 
     for await (const mov of result) {
-      console.log('mov: ', mov);
       moviesArray.push(mov);
     }
     return moviesArray;
