@@ -6,7 +6,7 @@ import MoviesGrid from './components/MoviesGrid';
 import { Movies } from '@/types';
 
 const Page = async () => {
-  const movies = await getMovies(0, 1);
+  const movies = await getMovies(0, 100);
   const reformattedMovies: Movies[] = JSON.parse(JSON.stringify(movies));
 
   return (
