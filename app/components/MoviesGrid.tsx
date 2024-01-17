@@ -43,7 +43,11 @@ const MoviesGrid = ({ movies }: { movies: Movies[] }) => {
       field: 'title',
       cellRenderer: AnchorTag,
     },
-    { field: 'imbd.rating', width: 150 },
+    {
+      field: 'imdb.rating',
+      width: 150,
+      headerName: 'IMDb Rating',
+    },
     {
       field: 'year',
       width: 100,
