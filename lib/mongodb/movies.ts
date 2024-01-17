@@ -20,6 +20,7 @@ const init = async () => {
     db = await client.db(dbName);
     movies = await db.collection('movies');
   } catch (error) {
+    console.log('ERROR: ', error);
     throw new Error('Failed to establish connection to database');
   }
 };
