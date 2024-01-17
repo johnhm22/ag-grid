@@ -4,7 +4,7 @@ export type Movies = {
   cast: string[];
   year: number;
   title: string;
-  imbd: {
+  imdb: {
     rating: number;
   };
 };
@@ -14,7 +14,7 @@ export type Params = {
     poster: string;
     title: string;
     cast: string[];
-    imbd: { string: number };
+    imdb: { rating: number };
     year: number;
   };
 };
