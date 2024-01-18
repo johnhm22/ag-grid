@@ -17,7 +17,9 @@ const AnchorTag = (params: Params) => {
           {params.data.title}{' '}
         </a>
       ) : (
-        params.data.title
+        <span onClick={() => window.alert('Sorry, no poster available')}>
+          {params.data.title}
+        </span>
       )}
     </>
   );
